@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Страница входа</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Griff+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+		
+		body {
+			font-family: 'Griff Sans', sans-serif;
+			background-image: url('bg.jpg'); /* add background image */
+			background-size: cover; /* cover the entire background */
+			background-color: #f0f0f0;
+			text-align: center; /* add text-align center to body */
+		}
+		.container {
+			width: 250px;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #1B1B1B;
+			border-radius: 10px;
+			margin: 0 auto; /* add margin 0 auto to center the container */
+			border: none; /* remove border */
+			box-shadow: none; /* remove box shadow */
+		}
+		.button {
+			background-color: #1CC79F;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-bottom: 10px; /* add margin bottom to create a gap */
+		}
+		.button:hover {
+			background-color: #169174;
+		}
+		#result {
+			color: #red;
+		}
+		.white-text {
+			color: #fff;
+		}
+		.back-button {
+			background-color: #1CC79F;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 20px; /* add margin top to create a gap */
+		}
+		.back-button:hover {
+			background-color: #169174;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="white-text">Страница входа</h1>
+		<p class="white-text">Выберите роль:</p>
+		<button class="button" onclick="loginAsDesigner()">Войти как дизайнер</button>
+		<br> <!-- add a line break to create a gap -->
+		<button class="button" onclick="loginAsAdmin()">Войти как админ</button>
+		<input type="text" id="code" placeholder="Введите секретный код">
+		<p id="result"></p>
+	</div>
+	<button class="back-button" onclick="goBack()">Назад</button>
+
+	<script>
+		function loginAsDesigner() {
+			var code = document.getElementById("code").value;
+			if (code === "nowdzn12") {
+				window.location.href = "design.html";
+			} else {
+				document.getElementById("result").innerHTML = "Код не верный";
+			}
+		}
+
+		function loginAsAdmin() {
+			var code = document.getElementById("code").value;
+			if (code === "nowadm12") {
+				window.location.href = "start.html";
+			} else {
+				document.getElementById("result").innerHTML = "Код не верный";
+			}
+		}
+
+		function goBack() {
+			window.history.back();
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+.contey {
+  margin: 0px 10px;
+}
+
+.header {
+  background-image: url(bg.jpg);
+}
+
+.logo {
+  margin: -105px 171px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 133px 0px; 
+}
+
+.item-m1, .item-m2, .item-m3, .item-m4, .item-m5  {
+  margin: 0px 25px; 
+}
+
+@keyframes scaleUp {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}
+
+.item-m1:hover { animation: scaleUp 0s ease-in forwards; }
+.item-m2:hover { animation: scaleUp 0s ease-in forwards; }
+.item-m3:hover { animation: scaleUp 0s ease-in forwards; }
+.item-m4:hover { animation: scaleUp 0s ease-in forwards; }
+.item-m5:hover { animation: scaleUp 0s ease-in forwards; }
+.info:hover { animation: scaleUp 0s ease-in forwards; }
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -60px 0px; 
+}
+
+.set1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 150px 0px; 
+}
+
+.set2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -50px 0px; 
+}
+.set3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 150px 0px; 
+}
+.set4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -35px 0px; 
+}
+.set5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 145px 0px; 
+}
+.foter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px 0px; 
+}
